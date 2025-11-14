@@ -36,7 +36,7 @@ def load_premium_users():
 
 def save_premium_users(premium_users):
     with open("premium_users.json", "w") as file:
-        json.dump({"premium_users": premium_users}, file, ind ent=2)
+        json.dump({"premium_users": premium_users}, file, indent=2)
 
 def is_premium(user_id):
     premium_users = load_premium_users()
